@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+
+body { background-color: #F6F8FA; }
+
+.header { background-color: #24292E; color: white; margin-bottom: 30px; text-align: center; }
+
+.header h1 { margin: 0; padding: 7vh; }
+
+.container { max-width: 1200px; min-height: 70vh; padding: 15px; margin: 0 auto; background-color: white; }
+
+.form { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 30px; }
+
+.form input { margin: 15px; font-size: 1.5rem; width: 300px; background-color: #fafbfc; border: 1px solid #d1d5da; border-radius: 3px; outline: none; box-shadow: 1px 1px 2px rgba(27, 31, 35, 0.075); }
+
+.form img { padding: 15px; }
+
+.form label { font-size: 1.5rem; }
+
+.search-result { display: -ms-flexbox; display: flex; -ms-flex-flow: row wrap; flex-flow: row wrap; background-color: #F6F8FA; }
+
+.search-user { max-width: 250px; -ms-flex: 1; flex: 1; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; margin: 30px; padding: 10px; border: 1px solid #24292E; background-color: white; }
+
+.search-user img { margin-bottom: 10px; }
+
+.search-user a { font-size: 1.1rem; text-decoration: none; color: #0366D5; }
+
+.btn { background-color: #eff3f6; color: #24292e; cursor: pointer; border: 1px solid rgba(27, 31, 35, 0.2); border-radius: 3px; padding: 3px 20px; }
+
+.btn:hover { background-color: #e5ecf0; }

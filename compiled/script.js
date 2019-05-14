@@ -1,6 +1,8 @@
 class User extends React.Component {
   render() {
-    return React.createElement("div", null, React.createElement("img", {
+    return React.createElement("div", {
+      className: "search-user"
+    }, React.createElement("img", {
       src: this.props.user.avatar_url,
       style: {
         maxWidth: '100px'
@@ -22,7 +24,9 @@ class UserList extends React.Component {
   }
 
   render() {
-    return React.createElement("div", null, this.users);
+    return React.createElement("div", {
+      className: "search-result"
+    }, this.users);
   }
 
 }
@@ -55,15 +59,23 @@ class App extends React.Component {
 
   render() {
     return React.createElement("div", null, React.createElement("form", {
+      className: "form",
       onSubmit: e => this.onSubmit(e)
-    }, React.createElement("label", {
+    }, React.createElement("img", {
+      className: "gitLogo",
+      src: "/images/GitHub-Mark/PNG/GitHub-Mark-64px.png"
+    }), React.createElement("label", {
       htmlFor: "searchText"
     }, "Search by user name"), React.createElement("input", {
       type: "text",
       id: "searchText",
       onChange: e => this.onChangeHandle(e),
-      value: this.state.searchText
-    })), React.createElement(UserList, {
+      value: this.state.searchText,
+      required: true
+    }), React.createElement("button", {
+      className: "btn",
+      type: "submit"
+    }, "Szukaj")), React.createElement(UserList, {
       users: this.state.users
     }));
   }
